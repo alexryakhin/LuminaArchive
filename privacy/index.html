@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Lumina Archive</title>
+  <meta name="description" content="Privacy Policy for Lumina Archive: what we collect, ads, analytics, CloudKit, and the unfurl worker." />
+  <meta name="theme-color" content="#0b0f10" />
+  <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navpill" aria-label="Primary">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Lumina Archive
+      </a>
+      <div class="nav-links">
+        <a href="/help/">Help</a>
+        <a href="/terms/">Terms</a>
+        <a href="/support/">Support</a>
+      </div>
+      <a class="btn btn-primary btn-nav" href="/">Home</a>
+    </nav>
+  </header>
+
+  <main class="page wrap">
+    <h1>Privacy Policy</h1>
+    <p class="page-meta">Last updated: August 30, 2026 · Applies to the Lumina Archive iOS app and this website.</p>
+
+    <div class="prose">
+      <p>Lumina Archive (“we”, “us”) is a personal link library. There are <strong>no Lumina accounts</strong>. This policy explains what data is processed when you use the app and site.</p>
+
+      <h2>1. Summary</h2>
+      <ul>
+        <li>Your saves (URLs, titles, thumbnails, collections) stay on your device and may sync via your personal iCloud if enabled.</li>
+        <li>Optional <strong>Archive+</strong> purchases go through Apple; we use RevenueCat to check entitlements.</li>
+        <li>Free users may see AdMob ads. Analytics and crash reporting use Firebase when configured.</li>
+        <li>When you save a link, a Cloudflare Worker may fetch public page metadata (title/image) to build a preview.</li>
+      </ul>
+
+      <h2>2. Data we process in the app</h2>
+      <h3>App functionality (on device / your iCloud)</h3>
+      <p>URLs you save, optional titles, platform labels, collection names, cached preview images, and related timestamps. This content is stored with SwiftData and may sync through Apple CloudKit to your other devices signed into the same Apple ID. We do not operate a Lumina user database of your library.</p>
+
+      <h3>Purchases</h3>
+      <p>Subscriptions are billed by Apple. We use <strong>RevenueCat</strong> with an anonymous app user id to restore Archive+ entitlement across reinstalls. Apple may share purchase status with RevenueCat under Apple’s and RevenueCat’s terms.</p>
+
+      <h3>Advertising (free tier)</h3>
+      <p>We may show Google <strong>AdMob</strong> banners on Home and Collections only. Depending on your tracking permission (App Tracking Transparency) and regional consent rules, ads may be personalized. Archive+ removes ads. You can report an inappropriate ad from Settings in the app.</p>
+
+      <h3>Analytics &amp; diagnostics</h3>
+      <p>When Firebase is configured for a build, we may collect limited events (for example screen opens, save, open source, paywall view, limit hit) via <strong>Firebase Analytics</strong>, crash reports via <strong>Firebase Crashlytics</strong>, and remote flags via <strong>Firebase Remote Config</strong> (limits, ads kill switch, unfurl base URL). Purchases are not duplicated as a full funnel in Firebase.</p>
+
+      <h3>Link previews (unfurl)</h3>
+      <p>To show a preview, the app may send the URL you entered to our <strong>Cloudflare Worker</strong>, which requests publicly available Open Graph / oEmbed-style metadata and may cache results. We do not use this to build public profiles of users. If preview fails, you can still save the link.</p>
+
+      <h3>Share Extension</h3>
+      <p>Shared URLs may be placed in an App Group inbox on your device until you finish saving in the main app.</p>
+
+      <h2>3. This website</h2>
+      <p>The marketing site is static. Hosting providers may process standard server logs (IP address, user agent, timestamps). We do not run account login on the site.</p>
+
+      <h2>4. Tracking</h2>
+      <p>If you allow tracking, device advertising identifiers may be used with AdMob as described in Apple’s tracking prompts. You can change permission in iOS Settings → Privacy &amp; Security → Tracking.</p>
+
+      <h2>5. Retention &amp; deletion</h2>
+      <p>Because there is no Lumina account, deleting a save or collection in the app removes it from your library (and from iCloud sync according to Apple’s sync behavior). Uninstalling the app removes on-device data. To stop ads-related processing, upgrade to Archive+ or limit tracking in system settings. For hosting or support emails you send us, we keep correspondence as needed to respond.</p>
+
+      <h2>6. Children</h2>
+      <p>Lumina Archive is not directed at children under 13, and we do not knowingly collect personal information from children in that age group.</p>
+
+      <h2>7. Third parties</h2>
+      <p>Relevant processors may include Apple, RevenueCat, Google (AdMob / Firebase), and Cloudflare. Their policies apply to their services.</p>
+
+      <h2>8. Contact</h2>
+      <p>Questions: <a href="mailto:support@luminaarchive.app">support@luminaarchive.app</a> · <a href="/support/">Support</a></p>
+
+      <h2>9. Changes</h2>
+      <p>We may update this policy. The “Last updated” date above will change when we do.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/help/">Help</a>
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </nav>
+      <p class="footer-copy">© <span id="y"></span> Lumina Archive</p>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Help — Lumina Archive</title>
+  <meta name="description" content="Help for Lumina Archive: save links, collections, Share Extension, Archive+, and opening sources." />
+  <meta name="theme-color" content="#0b0f10" />
+  <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navpill" aria-label="Primary">
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Lumina Archive
+      </a>
+      <div class="nav-links">
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/support/">Support</a>
+      </div>
+      <a class="btn btn-primary btn-nav" href="/">Home</a>
+    </nav>
+  </header>
+
+  <main class="page wrap">
+    <h1>Help Center</h1>
+    <p class="page-meta">Quick answers for Lumina Archive on iPhone.</p>
+
+    <div class="prose">
+      <h2>What is Lumina Archive?</h2>
+      <p>A personal vault for links you care about — workouts, inspiration, anything you want to revisit. We store the link and a preview when we can. Watching always happens in the original app or browser.</p>
+
+      <h2>How do I save a link?</h2>
+      <ul>
+        <li><strong>In the app:</strong> tap +, paste a URL, pick a collection, Save.</li>
+        <li><strong>Share Extension:</strong> in Safari (or another app), open Share → Lumina Archive. Then open Lumina Archive to finish saving if prompted.</li>
+      </ul>
+
+      <h2>Why is there no preview?</h2>
+      <p>Some sites block Open Graph metadata. You can still save the link. Titles stay editable by saving with whatever title we could detect (often the hostname).</p>
+
+      <h2>How do I watch something again?</h2>
+      <p>Tap the card. Lumina Archive opens the source URL (and may hand off to an installed app such as YouTube when possible).</p>
+
+      <h2>Collections</h2>
+      <p>Create collections from the Collections tab. Rename or delete via long-press / context menu. A default “Saved” collection is created for you on first launch.</p>
+
+      <h2>Archive+</h2>
+      <p>Optional subscription for unlimited collections and saves, plus no ads. Purchase and restore through Apple. Manage in iOS Settings → Apple ID → Subscriptions.</p>
+
+      <h2>Ads</h2>
+      <p>Free users may see a banner on Home and Collections only. Report an ad from Settings if something looks wrong.</p>
+
+      <h2>Privacy &amp; accounts</h2>
+      <p>No Lumina login. See the <a href="/privacy/">Privacy Policy</a> for AdMob, Firebase, RevenueCat, CloudKit, and unfurling.</p>
+
+      <h2>Still stuck?</h2>
+      <p><a href="/support/">Contact support</a> · <a href="mailto:support@luminaarchive.app">support@luminaarchive.app</a></p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <nav class="footer-links" aria-label="Footer">
+        <a href="/help/">Help</a>
+        <a href="/support/">Support</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </nav>
+      <p class="footer-copy">© <span id="y"></span> Lumina Archive</p>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
