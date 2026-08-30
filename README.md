@@ -53,6 +53,6 @@ git submodule set-url website https://github.com/<owner>/LuminaArchive-Web.git
 ## Before go-live
 
 - [ ] Replace App Store button href on the home page with the real listing URL
-- [ ] Confirm `support@luminaarchive.app` receives mail (or update email everywhere)
+- [ ] Confirm `support@alexriakhin.com` receives mail (or update email everywhere)
 - [ ] Legal review of Privacy + Terms
 - [ ] Optional: favicon / OG image
