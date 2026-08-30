@@ -101,7 +101,7 @@ img {
   height: 28px;
   border-radius: 8px;
   background:
-    url("../assets/app-icon.svg") center / cover no-repeat,
+    url("../favicon.svg") center / cover no-repeat,
     linear-gradient(145deg, var(--primary), var(--primary-strong));
   box-shadow: 0 0 18px rgba(192, 193, 255, 0.35);
 }

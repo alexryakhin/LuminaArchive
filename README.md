@@ -55,4 +55,5 @@ git submodule set-url website https://github.com/<owner>/LuminaArchive-Web.git
 - [ ] Replace App Store button href on the home page with the real listing URL
 - [ ] Confirm `support@alexriakhin.com` receives mail (or update email everywhere)
 - [ ] Legal review of Privacy + Terms
-- [ ] Optional: favicon / OG image
+- [x] Favicon set (RealFaviconGenerator) at site root
+- [ ] Optional: OG image
