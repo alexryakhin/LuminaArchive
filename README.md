@@ -30,14 +30,22 @@ python3 -m http.server 8080
 
 ## Submodule
 
-Used from the iOS app repo as `website/`:
+Used from the iOS app repo as `website/`. The parent currently points at this sibling folder via an absolute local path (GitHub auth was unavailable when wiring the submodule).
 
 ```bash
-# from LuminaArchiveApp (parent)
-git submodule update --init --recursive
+# from LuminaArchive (parent)
+git -c protocol.file.allow=always submodule update --init --recursive
 ```
 
-After you create a GitHub remote for this site, update the parent `.gitmodules` URL from the local path to the HTTPS remote.
+When you create a GitHub remote for this site:
+
+```bash
+# in LuminaArchive-Web
+gh repo create alexryakhin/LuminaArchive-Web --private --source=. --remote=origin --push
+
+# in LuminaArchive (parent)
+git submodule set-url website https://github.com/alexryakhin/LuminaArchive-Web.git
+```
 
 ## Before go-live
 
