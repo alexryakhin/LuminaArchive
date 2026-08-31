@@ -3,8 +3,6 @@
 Static marketing + legal site for the iOS app.  
 **Live:** [https://alexriakhin.com/LuminaArchive/](https://alexriakhin.com/LuminaArchive/) (GitHub Pages).
 
-Design inspiration: bold hero + pill nav pattern from [tryclucky.com](https://tryclucky.com), restyled for Lumina’s dark vault palette.
-
 ## Pages
 
 | Path | Purpose |
@@ -52,7 +50,7 @@ git submodule set-url website https://github.com/<owner>/LuminaArchive-Web.git
 
 ## Before go-live
 
-- [ ] Replace App Store button href on the home page with the real listing URL
+- [x] Replace App Store button href on the home page with the real listing URL
 - [ ] Confirm `support@alexriakhin.com` receives mail (or update email everywhere)
 - [ ] Legal review of Privacy + Terms
 - [x] Favicon set (RealFaviconGenerator) at site root
